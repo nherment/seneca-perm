@@ -1,4 +1,4 @@
-[![Build Status](https://api.travis-ci.org/nherment/seneca-perm.png?branch=master)](https://travis-ci.org/nherment/seneca-perm)
+[![Build Status](https://api.travis-ci.org/rjrodger/seneca-perm.png?branch=master)](https://travis-ci.org/rjrodger/seneca-perm)
 
 # seneca-perm
 
@@ -29,9 +29,9 @@ in the [seneca examples repository](https://github.com/rjrodger/seneca-examples)
 If you're using this module, feel free to contact me on twitter if you
 have any questions! :) [@rjrodger](http://twitter.com/rjrodger)
 
-Current Version: 0.1.2
+Current Version: 0.4.0
 
-Tested on: Node 0.10.24, Seneca 0.5.15
+Tested on: Node 0.10.36, Seneca 0.6.1
 
 
 ### Quick example
@@ -476,3 +476,14 @@ The above will allow users to only create, read, update or delete 'todo' objects
 ```bash
 mocha test/*.test.js --seneca.log.print
 ```
+
+## Tracing
+
+If you need to trace what seneca-perm is doing you can active DEBUG before running your application:
+
+```
+DEBUG=seneca-perm:* node yourapp.js
+```
+
+
+
